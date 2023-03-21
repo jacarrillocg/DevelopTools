@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Web;
 
@@ -6,9 +7,13 @@ namespace DevelopTools
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
+            //cargamos el json
+            cargajson();
+
         }
 
         private void btnAplicar_Click(object sender, EventArgs e)
@@ -85,6 +90,14 @@ namespace DevelopTools
             return " git pull origin "+ frombranch+ " \r\n ";
         }
 
-
+        private void cargajson()
+        {
+            string pathjsonRepos = "data/repositorios.json";
+            List<RepoObject> Listarepos= RepoService.GetListFromJsonFile<RepoObject>(pathjsonRepos);
+            foreach(RepoObject obj in Listarepos) 
+            { 
+                comboRepos.Items.Add(obj);
+            }
+        }
     }
 }

@@ -33,6 +33,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnAplicar = new System.Windows.Forms.Button();
             this.txtComentario = new System.Windows.Forms.TextBox();
+            this.comboRepos = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtResult
@@ -78,11 +80,30 @@
             this.txtComentario.Size = new System.Drawing.Size(245, 150);
             this.txtComentario.TabIndex = 4;
             // 
+            // comboRepos
+            // 
+            this.comboRepos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRepos.FormattingEnabled = true;
+            this.comboRepos.Location = new System.Drawing.Point(23, 127);
+            this.comboRepos.Name = "comboRepos";
+            this.comboRepos.Size = new System.Drawing.Size(256, 28);
+            this.comboRepos.TabIndex = 5;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(41, 190);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(151, 28);
+            this.comboBox1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboRepos);
             this.Controls.Add(this.txtComentario);
             this.Controls.Add(this.btnAplicar);
             this.Controls.Add(this.textBox3);
@@ -102,5 +123,7 @@
         private TextBox textBox3;
         private Button btnAplicar;
         private TextBox txtComentario;
+        private ComboBox comboRepos;
+        private ComboBox comboBox1;
     }
 }
