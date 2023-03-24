@@ -1,0 +1,18 @@
+ [
+    {"name": "web_sivubo", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\web_sivubo"},
+    {"name": "web_sivufo", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\web_sivu_frontoffice"},
+    {"name": "web_incomes", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\web_incomes"},
+    {"name": "web_adminplatform", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\web_admin_plat"},
+    {"name": "sso", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\sso_auth"},
+    {"name": "api_sivubo", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\api_sivubo"},
+    {"name": "api_sivufo", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\api_sivu_frontoffice"},
+    {"name": "api_paymments", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\API_Payments"},
+    {"name": "api_adminplatform", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\api_adminplatform"},
+    {"name": "api_externalusers", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\API_ExternalUsers"},
+    {"name": "api_incomes", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\api_incomes"},
+    {"name": "api-historicdata", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\historic_data"},
+    {"name": "api_datasources", "description":"", "repopath":"C:\\Users\\jose.carrillo\\source\\repos\\api_egobx_datasources"},
+    {"name": "app_sivufo", "description":"", "repopath":""}
+ ]
+
+    

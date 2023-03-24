@@ -58,7 +58,9 @@ namespace DevelopTools
         {
             get
             {
+                var algo = _repo.RetrieveStatus();
                 return _repo.RetrieveStatus().Any(s => s.State != FileStatus.Ignored);
+
             }
         }
 
@@ -71,7 +73,8 @@ namespace DevelopTools
                     Commands.Stage(_repo, "*");//agrega todos los cambios
 
                     Signature author = new Signature(new Identity("jose.carrillo", "jose.carrillo@blueoceantech.com.mx"), DateTime.Now);
-                    var commitResponse = _repo.Commit("mensaje", author, author);
+                    var commitResponse = _repo.Commit("Integración de ramas", author, author);
+                    
                 }
                 else
                 {
