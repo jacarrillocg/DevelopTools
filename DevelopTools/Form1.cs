@@ -118,8 +118,10 @@ namespace DevelopTools
         {
 
             WorkingPath= comboRepos.SelectedItem.GetType().GetProperty("Value").GetValue(comboRepos.SelectedItem, null).ToString();
-            
-            
+            var repo = RepositoryInformation.GetRepositoryInformationForPath(WorkingPath);
+            AgregarTextoASalida("\r\n Rama actual : " + repo.BranchName);
+
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -194,6 +196,15 @@ namespace DevelopTools
             {
                 //nada
             }
+        }
+
+        private void listaBranches_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //hacer el checkout a la nueva rama
+            string currentBranch = listaBranches.SelectedItem.ToString();
+            EjecutarComando(GitCheckoutForce(currentBranch));
+            AgregarTextoASalida("Ahora tu rama actual es: " + currentBranch);
+            txtramadestino.Text = currentBranch;
         }
     }
 }

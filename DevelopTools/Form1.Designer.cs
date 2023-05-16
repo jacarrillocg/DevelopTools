@@ -46,11 +46,11 @@
             this.txtResult.BackColor = System.Drawing.Color.Black;
             this.txtResult.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtResult.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtResult.Location = new System.Drawing.Point(0, 271);
+            this.txtResult.Location = new System.Drawing.Point(0, 357);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtResult.Size = new System.Drawing.Size(854, 289);
+            this.txtResult.Size = new System.Drawing.Size(848, 289);
             this.txtResult.TabIndex = 0;
             this.txtResult.WordWrap = false;
             // 
@@ -66,7 +66,7 @@
             // 
             // btnConsultastatus
             // 
-            this.btnConsultastatus.Location = new System.Drawing.Point(294, 34);
+            this.btnConsultastatus.Location = new System.Drawing.Point(373, 291);
             this.btnConsultastatus.Name = "btnConsultastatus";
             this.btnConsultastatus.Size = new System.Drawing.Size(243, 29);
             this.btnConsultastatus.TabIndex = 6;
@@ -76,7 +76,7 @@
             // 
             // btnsincronizar
             // 
-            this.btnsincronizar.Location = new System.Drawing.Point(12, 86);
+            this.btnsincronizar.Location = new System.Drawing.Point(12, 236);
             this.btnsincronizar.Name = "btnsincronizar";
             this.btnsincronizar.Size = new System.Drawing.Size(243, 29);
             this.btnsincronizar.TabIndex = 7;
@@ -86,14 +86,14 @@
             // 
             // txtramaorigen
             // 
-            this.txtramaorigen.Location = new System.Drawing.Point(278, 88);
+            this.txtramaorigen.Location = new System.Drawing.Point(278, 238);
             this.txtramaorigen.Name = "txtramaorigen";
             this.txtramaorigen.Size = new System.Drawing.Size(125, 27);
             this.txtramaorigen.TabIndex = 8;
             // 
             // txtramadestino
             // 
-            this.txtramadestino.Location = new System.Drawing.Point(444, 87);
+            this.txtramadestino.Location = new System.Drawing.Point(444, 237);
             this.txtramadestino.Name = "txtramadestino";
             this.txtramadestino.Size = new System.Drawing.Size(125, 27);
             this.txtramadestino.TabIndex = 9;
@@ -102,7 +102,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(409, 94);
+            this.label1.Location = new System.Drawing.Point(409, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 20);
             this.label1.TabIndex = 10;
@@ -117,16 +117,17 @@
             "demo-sandbox",
             "uat",
             "dev"});
-            this.listaBranches.Location = new System.Drawing.Point(613, 34);
+            this.listaBranches.Location = new System.Drawing.Point(323, 34);
             this.listaBranches.Name = "listaBranches";
             this.listaBranches.Size = new System.Drawing.Size(143, 104);
             this.listaBranches.TabIndex = 11;
+            this.listaBranches.SelectedIndexChanged += new System.EventHandler(this.listaBranches_SelectedIndexChanged);
             this.listaBranches.DoubleClick += new System.EventHandler(this.listaBranches_DoubleClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(628, 11);
+            this.label2.Location = new System.Drawing.Point(323, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 20);
             this.label2.TabIndex = 12;
@@ -145,7 +146,7 @@
             // btneliminarcambioslocales
             // 
             this.btneliminarcambioslocales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btneliminarcambioslocales.Location = new System.Drawing.Point(12, 138);
+            this.btneliminarcambioslocales.Location = new System.Drawing.Point(-1, 291);
             this.btneliminarcambioslocales.Name = "btneliminarcambioslocales";
             this.btneliminarcambioslocales.Size = new System.Drawing.Size(225, 29);
             this.btneliminarcambioslocales.TabIndex = 14;
@@ -157,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 560);
+            this.ClientSize = new System.Drawing.Size(848, 646);
             this.Controls.Add(this.btneliminarcambioslocales);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.label2);
